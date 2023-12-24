@@ -9,7 +9,7 @@ initThinBackend({ host: process.env.NEXT_PUBLIC_BACKEND_URL })
 
 const Providers = ({ children } : { children: React.ReactNode}) => {
   return (
-    <ThinBackend>
+    <ThinBackend requireLogin>
       <div className='w-screen h-screen flex flex-col bg-gray-900'>
         <div className='flex justify-center w-full'>
           <button onClick={() => logout()}>Logout</button>
