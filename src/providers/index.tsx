@@ -7,12 +7,10 @@ import { ThinBackend } from 'thin-backend-react'
 
 initThinBackend({ host: process.env.NEXT_PUBLIC_BACKEND_URL })
 
-const Providers = ({ children } : { children: React.ReactNode}) => {
+const Providers = ({ children }: { children: React.ReactNode }) => {
   return (
     <ThinBackend requireLogin={false}>
-      <Box className="flex flex-col items-center w-screen">
-        { children }
-      </Box>
+      <Box className="flex flex-col items-center w-screen">{children}</Box>
     </ThinBackend>
   )
 }
