@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/thin-backend": "https://thin.dev/types/587c71a5-821c-4b8c-abf6-bc8a13dd5d8b/TGlqIssipTSUPphsmRTqIfKplJuPNUCl",
+    "@types/thin-backend": "https://thin.dev/types/1b53b1bb-cf27-4453-a8c9-dd1e9cd51d54/YJYfDOXyZrnoIuojFbPiBGpDMXzMxMoP",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",

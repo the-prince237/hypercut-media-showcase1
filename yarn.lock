@@ -247,6 +247,10 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.8.tgz#ce5ace04cfeabe7ef87c0091e50752e36707deff"
   integrity sha512-WZLiwShhwLRmeV6zH+GkbOFT6Z6VklCItrDioxUnv+u4Ll+8vKeFySoFyK/0ctcRpOmwAicELfmys1sDc/Rw+A==
 
+"@types/thin-backend@https://thin.dev/types/1b53b1bb-cf27-4453-a8c9-dd1e9cd51d54/YJYfDOXyZrnoIuojFbPiBGpDMXzMxMoP":
+  version "1.0.0"
+  resolved "https://thin.dev/types/1b53b1bb-cf27-4453-a8c9-dd1e9cd51d54/YJYfDOXyZrnoIuojFbPiBGpDMXzMxMoP#592e64002d4cfdf680594c2a85689441e82c8151"
+
 "@types/thin-backend@https://thin.dev/types/587c71a5-821c-4b8c-abf6-bc8a13dd5d8b/TGlqIssipTSUPphsmRTqIfKplJuPNUCl":
   version "1.0.0"
   resolved "https://thin.dev/types/587c71a5-821c-4b8c-abf6-bc8a13dd5d8b/TGlqIssipTSUPphsmRTqIfKplJuPNUCl#277037906535f0cc746001a708cfa8fd0f61b063"

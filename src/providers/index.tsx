@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { initThinBackend, logout } from 'thin-backend'
+import { initThinBackend } from 'thin-backend'
 import { ThinBackend } from 'thin-backend-react'
 
 initThinBackend({ host: process.env.NEXT_PUBLIC_BACKEND_URL })
@@ -9,10 +9,12 @@ initThinBackend({ host: process.env.NEXT_PUBLIC_BACKEND_URL })
 
 const Providers = ({ children } : { children: React.ReactNode}) => {
   return (
-    <ThinBackend requireLogin>
-      <div>
-        { children }
-      </div>  
+    <ThinBackend>
+      <div className='w-screen h-screen flex flex-col bg-gray-900'>
+        <div className='flex items-center h-screen flex-1 justify-center'>
+          { children }
+        </div>
+      </div>
     </ThinBackend>
   )
 }
