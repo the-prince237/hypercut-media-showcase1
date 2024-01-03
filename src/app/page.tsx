@@ -20,11 +20,10 @@ export default function Home() {
 
 const useClasses = makeStyles({
   home: {
-    position: 'relative',
     display: 'flex',
     flexDirection: 'column',
   },
   body: {
-    marginTop: '100vh',
+    marginTop: '120vh',
   },
 });
