@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "hypercut-media-showcase-1",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,20 +7,28 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write '*/**/*.{js,jsx,ts,tsx,css,md}'"
+    "format": "yarn prettier --write .",
+    "watch": "watch 'yarn format' ./src"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.8",
+    "@mui/base": "^5.0.0-beta.29",
     "@mui/icons-material": "^5.15.2",
     "@mui/material": "^5.15.2",
+    "@mui/styles": "^5.15.2",
+    "@mui/system": "^5.15.2",
     "@types/thin-backend": "https://thin.dev/types/1b53b1bb-cf27-4453-a8c9-dd1e9cd51d54/YJYfDOXyZrnoIuojFbPiBGpDMXzMxMoP",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
     "thin-backend": "^0.12.1",
     "thin-backend-react": "^0.10.1"
+  },
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -30,12 +38,12 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.1.2",
     "eslint-plugin-tailwindcss": "^3.13.1",
     "postcss": "^8",
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.10",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5",
+    "watch": "^1.0.2"
   }
 }

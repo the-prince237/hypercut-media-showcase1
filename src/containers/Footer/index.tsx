@@ -1,8 +1,8 @@
-import { Box } from '@mui/material'
-import React from 'react'
+import { Box } from '@mui/material';
+import React from 'react';
 
 const Footer = () => {
-  return <Box>Footer</Box>
-}
+  return <Box>Footer</Box>;
+};
 
-export default Footer
+export default Footer;

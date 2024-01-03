@@ -1,15 +1,30 @@
-'use client'
+'use client';
 
-import { Hero, Plans, Services, Stats } from '@/containers/Home'
-import { Box } from '@mui/material'
+import { Hero, Plans, Services, Works } from '@/containers/Home';
+import { Box } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 
 export default function Home() {
+  const classes = useClasses();
   return (
-    <Box className='h-full w-full'>
+    <Box className={classes.home}>
       <Hero />
-      <Stats />
-      <Services />
-      <Plans />
+      <Box className={classes.body}>
+        <Works />
+        <Services />
+        <Plans />
+      </Box>
     </Box>
-  )
+  );
 }
+
+const useClasses = makeStyles({
+  home: {
+    position: 'relative',
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  body: {
+    marginTop: '100vh',
+  },
+});

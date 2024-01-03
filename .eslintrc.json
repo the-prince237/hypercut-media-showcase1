@@ -3,12 +3,8 @@
   "plugins": ["tailwindcss"],
   "overrides": [
     {
-      "files": ["*.ts", "*.tsx", "*.js", "*.css"],
+      "files": ["*.ts", "*.tsx", "*.js"],
       "parser": "@typescript-eslint/parser"
     }
-  ],
-  "rules": {
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
-  }
+  ]
 }
