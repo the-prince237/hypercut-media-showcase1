@@ -3,15 +3,14 @@ import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
 import React from 'react';
 
-import bgImage from '../../../../public/bgs/hero.png';
 import waves from '../../../../public/bgs/hero-waves.jpg';
+import meta from '../../../../public/icons/meta.png';
 import { makeStyles } from '@mui/styles';
 
 import { Rubik_Glitch } from 'next/font/google';
 import classNames from 'classnames';
 import { quicksandLight } from '@/containers/Header';
-
-import { CloseOutlined } from '@mui/icons-material';
+import { BluredRing } from '@/components';
 
 const rubik = Rubik_Glitch({ weight: '400', subsets: ['latin'] });
 
@@ -30,31 +29,16 @@ const Hero = () => {
         src={waves}
         alt='waves'
       />
-      <Image
-        style={{
-          objectFit: 'contain',
-          filter: 'grayscale(100%)',
-          height: '90vh',
-          display: 'flex',
-          justifyContent: 'flex-end',
-          position: 'relative',
-          right: '-300px',
-        }}
-        src={bgImage}
-        alt='hero bg'
-      />
-      <Box className={classes.elements}>
-        <Box className={classes.texts}>
-          <Typography className={classNames(classes.text, classes.text1, quicksandLight.className)}>
-            Your Creative
-          </Typography>
-          <Typography className={classNames(rubik.className, classes.text, classes.text2)}>
-            Marketing Agency
-          </Typography>
-        </Box>
-      </Box>
-      <Box className={classNames(classes.elements, classes.graphics)}>
-        <CloseOutlined color='primary' fontSize='large' />
+      <BluredRing />
+      <Box className={classes.texts}>
+        <Typography className={classNames(rubik.className, classes.text, classes.text2)}>
+          EXPLOSEZ VOS VENTES
+        </Typography>
+        <Typography className={classNames(classes.text, classes.text1, quicksandLight.className)}>
+          avec
+          <Image src={meta} style={{ width: 56, height: 56, objectFit: 'contain' }} alt='meta' />
+          <span className={classes.text12}>eta</span>
+        </Typography>
       </Box>
     </Box>
   );
@@ -68,40 +52,49 @@ const useClasses = makeStyles({
     height: '100%',
     width: '100%',
     display: 'flex',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-  },
-  elements: {
-    position: 'absolute',
-    top: '0',
-    left: '0',
-    width: '100%',
-    height: '100%',
-    padding: '0 100px',
-    display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    padding: '0 100px',
   },
-  graphics: {},
-  texts: {
+  block: {
+    position: 'absolute',
+    left: 0,
+    top: 0,
     width: '100%',
-    marginLeft: '20vw',
+    height: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  texts: {
+    position: 'relative',
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   },
   text: {
     fontSize: '86px',
     lineHeight: '86px',
+    textAlign: 'center',
   },
   text1: {
-    background: 'rgba(0, 0, 0, 0.1)',
-    backdropFilter: 'blur(1px)',
     width: 'fit-content',
-    paddingRight: '50px',
-    fontSize: '86px',
-    lineHeight: '86px',
-    fontWeight: 'lighter',
+    padding: '10px 75px 10px 10px',
+    fontSize: '36px',
+    lineHeight: '36px',
+    // fontWeight: '900',
+    // color: 'gray',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  text12: {
+    color: '#0166e2',
+    fontWeight: '900',
   },
   text2: {
-    textShadow: '15px 15px 15px black',
+    color: '#222',
   },
 });
 

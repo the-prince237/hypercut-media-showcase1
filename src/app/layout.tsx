@@ -14,13 +14,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='en'>
       <body>
-        <div className='bg-yellow-500'>
-          <Providers>
-            <Header />
-            {children}
-            <Footer />
-          </Providers>
-        </div>
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

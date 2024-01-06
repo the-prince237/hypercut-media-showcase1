@@ -5,6 +5,8 @@ import React from 'react';
 import { Quicksand } from 'next/font/google';
 import { makeStyles } from '@mui/styles';
 import classNames from 'classnames';
+import metaBlack from '../../../public/icons/meta_black.png';
+import Image from 'next/image';
 
 export const quicksandLight = Quicksand({ weight: '300', subsets: ['latin'] });
 const quicksandBold = Quicksand({ weight: '700', subsets: ['latin'] });
@@ -15,10 +17,20 @@ const Header = () => {
     <Box className={classes.header}>
       <Box className={classes.logo}>
         <Typography className={classNames(quicksandLight.className, classes.logoText)}>
-          Hypercute
+          Hypercut
         </Typography>
+
+        <Image
+          src={metaBlack}
+          alt='meta'
+          style={{
+            height: 30,
+            width: 30,
+            objectFit: 'contain',
+          }}
+        />
         <Typography className={classNames(quicksandBold.className, classes.logoText)}>
-          Media
+          edia
         </Typography>
       </Box>
     </Box>
@@ -27,20 +39,23 @@ const Header = () => {
 
 const useClasses = makeStyles({
   header: {
-    position: 'relative',
-    backgroundColor: 'rgba(100, 100, 100, 0.1)',
-    backdropFilter: 'blur(15px)',
+    position: 'fixed',
+    backdropFilter: 'blur(5px)',
     zIndex: '10',
     display: 'flex',
     alignItems: 'center',
     width: '100vw',
     height: '100px',
-    padding: '0 100px',
-    borderBottom: 'solid 1px #333',
+    padding: '0 50px',
   },
   logo: {
     display: 'flex',
     flexDirection: 'row',
+    alignItems: 'center',
+    cursor: 'pointer',
+    '&:hover': {
+      transform: 'scale(1.1)',
+    },
   },
   logoText: {
     display: 'flex',
