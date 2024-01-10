@@ -1,29 +1,20 @@
 'use client';
 
+import { ContactUs } from '@/containers';
 import { Hero, Plans, Services, Works } from '@/containers/Home';
 import { Box } from '@mui/material';
-import { makeStyles } from '@mui/styles';
 
 export default function Home() {
-  const classes = useClasses();
   return (
-    <Box className={classes.home}>
+    <Box className='flex flex-col'>
       <Hero />
-      <Box className={classes.body}>
+      <Box className='mt-[120vh]'>
         <Works />
+        <ContactUs />
         <Services />
+        <ContactUs />
         <Plans />
       </Box>
     </Box>
   );
 }
-
-const useClasses = makeStyles({
-  home: {
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  body: {
-    marginTop: '120vh',
-  },
-});
