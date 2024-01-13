@@ -20,6 +20,9 @@ module.exports = {
       scale: {
         '-1': '-1',
       },
+      colors: {
+        orange00: '#c76a0b',
+      },
     },
   },
   plugins: [],
