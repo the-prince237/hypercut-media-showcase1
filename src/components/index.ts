@@ -1,2 +1,1 @@
-export { default as BluredRing } from './BluredRing';
-export { default as RegularLink } from './RegularLink';
+export { default as Logo } from './Logo';

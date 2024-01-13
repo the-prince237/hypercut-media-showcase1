@@ -14,6 +14,12 @@ module.exports = {
         gradientConic1:
           'radial-gradient(circle, rgba(64,140,134,1) 0%, rgba(15,156,143,1) 52%, rgba(95,207,198,1) 100%)',
       },
+      dropShadow: {
+        darkToBottomRight01: '30px 30px 50px #aaa',
+      },
+      scale: {
+        '-1': '-1',
+      },
     },
   },
   plugins: [],

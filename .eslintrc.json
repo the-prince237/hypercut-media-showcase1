@@ -6,5 +6,15 @@
       "files": ["*.ts", "*.tsx", "*.js"],
       "parser": "@typescript-eslint/parser"
     }
-  ]
+  ],
+  "settings": {
+    "tailwindcss": {
+      "whitelist": [
+        "bg-gradientConic1",
+        "drop-shadow-darkToBottomRight01",
+        "flip-horizontal",
+        "flip-vertical"
+      ]
+    }
+  }
 }
