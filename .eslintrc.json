@@ -13,7 +13,8 @@
         "bg-gradientConic1",
         "drop-shadow-darkToBottomRight01",
         "flip-horizontal",
-        "flip-vertical"
+        "flip-vertical",
+        "bg-orange00"
       ]
     }
   }

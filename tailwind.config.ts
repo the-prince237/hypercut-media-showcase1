@@ -22,6 +22,9 @@ module.exports = {
       },
       colors: {
         orange00: '#c76a0b',
+        bgBlue: '#040724',
+        boxBlue: 'rgba(18, 21, 51, 0.60)',
+        purpleLight: '#8C91BE',
       },
     },
   },
