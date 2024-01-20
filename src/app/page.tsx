@@ -11,7 +11,7 @@ export default function Home() {
       <Box className='mt-[150vh] px-[134px]'>
         <Works />
         <Services />
-        <ContactUs />={' '}
+        <ContactUs />
       </Box>
     </Box>
   );
