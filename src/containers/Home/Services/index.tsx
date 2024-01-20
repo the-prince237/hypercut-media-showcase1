@@ -2,6 +2,7 @@ import { RegularBox, TextFontMedium, TextFontSmall, TitleFontMedium } from '@/co
 import { RegularBoxProps } from '@/components/types';
 import { Box } from '@mui/material';
 import React from 'react';
+import Masonry from 'react-responsive-masonry';
 
 const Services = () => {
   return (
@@ -12,7 +13,7 @@ const Services = () => {
         <TextFontSmall title='With our comprehensive suite of digital marketing features, we empower your business to thrive in the online realm, driving growth, increasing brand visibility, and engaging your target audience effectively.' />
         <TextFontMedium title='Empowering Your Business with Cutting-Edge Digital Marketing Capabilities' />
       </Box>
-      <Box className='flex flex-wrap justify-end gap-[20px]'>
+      <Masonry columnsCount={2} gutter='40px'>
         <ServicesBox
           title='Engaging Content Creation'
           number={1}
@@ -33,14 +34,14 @@ const Services = () => {
           number={4}
           text="Amplify your brand's presence and engage your audience across various social media platforms."
         />
-      </Box>
+      </Masonry>
     </Box>
   );
 };
 
 const ServicesBox = (props: RegularBoxProps) => (
   <Box className='hover:drop-shadow-serviceBox'>
-    <RegularBox {...props} />
+    <RegularBox {...props} row />
   </Box>
 );
 

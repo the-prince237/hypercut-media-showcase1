@@ -10,10 +10,10 @@ const RegularBox = (props: RegularBoxProps) => {
   const { number, title, text } = props;
   return (
     <Box
-      className={classNames('flex items-start justify-start rounded-[20px] p-[25px]', {
-        'bg-boxBlueTrans gap-[20px] backdrop-blur-md': props.glazed,
+      className={classNames('flex items-start justify-start gap-[20px] rounded-[20px] p-[25px]', {
+        'bg-boxBlueTrans backdrop-blur-md': props.glazed,
         'bg-boxBlue': !props.glazed,
-        'flex-col gap-[15xp]': !props.row,
+        'flex-col': !props.row,
       })}
       {...boxProps}
     >

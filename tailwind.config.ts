@@ -16,7 +16,7 @@ module.exports = {
       },
       dropShadow: {
         darkToBottomRight01: '30px 30px 50px #aaa',
-        serviceBox: '-30px 30px white',
+        serviceBox: '-15px 15px white',
       },
       scale: {
         '-1': '-1',
