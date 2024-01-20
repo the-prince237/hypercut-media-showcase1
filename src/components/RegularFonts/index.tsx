@@ -9,7 +9,7 @@ export const MenuFont = (props: TypographyProps) => (
 
 export const TextFontSmall = (props: TypographyProps & { smallLeading?: boolean }) => (
   <Typography
-    className={classNames('text-purpleLight text-[16px] font-[400] leading-[36px]', {
+    className={classNames('text-[16px] font-[400] leading-[36px] text-purpleLight', {
       'leading-[28px]': props.smallLeading,
     })}
   >
@@ -19,6 +19,12 @@ export const TextFontSmall = (props: TypographyProps & { smallLeading?: boolean 
 
 export const TitleFontSmall = (props: TypographyProps) => (
   <Typography className='text-[20px] font-[400] leading-[36px] text-white'>
+    {props.title}
+  </Typography>
+);
+
+export const TitleFontLarge = (props: TypographyProps) => (
+  <Typography className='max-w-[1200px] text-center text-[48px] leading-[70px] text-[400] text-white'>
     {props.title}
   </Typography>
 );
