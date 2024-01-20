@@ -12,7 +12,7 @@ const Works = () => {
       <Masonry gutter='25px' columnsCount={4} className='items-end'>
         {itemData.map((item, index) => (
           <Box
-            className='relative cursor-pointer overflow-hidden rounded-[30px] bg-gradient-to-br from-transparent to-[#5a5f92] p-[7px] hover:top-3 '
+            className='relative cursor-pointer overflow-hidden rounded-[30px] bg-gradient-to-br from-transparent to-[#5a5f92] p-[7px] hover:bottom-3 '
             key={index}
           >
             <Image
@@ -24,7 +24,7 @@ const Works = () => {
           </Box>
         ))}
       </Masonry>
-      <Box className='absolute bottom-0 left-0 h-[300px] w-[200%] bg-gradient-to-t from-white to-transparent' />
+      <Box className='absolute bottom-0 left-0 h-[300px] w-[200%] bg-gradient-to-t from-bgBlue to-transparent' />
     </Box>
   );
 };
