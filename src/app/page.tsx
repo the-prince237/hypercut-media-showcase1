@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <Box className='flex flex-col'>
       <Hero />
-      <Box className='mt-[150vh] px-[134px]'>
+      <Box className='mt-[150vh]'>
         <Works />
-        <ContactUs />
         <Services />
+        <ContactUs />
         <ContactUs />
         <Plans />
       </Box>
