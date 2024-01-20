@@ -5,7 +5,6 @@ import { waves } from '../../../../public/bgs';
 import { TextFontSmall } from '@/components';
 import { heroVector, likes } from '../../../../public/images';
 import { HeroBox } from './components';
-import { likesUp } from '../../../../public/animes';
 
 const Hero = () => {
   return (
@@ -15,12 +14,6 @@ const Hero = () => {
         alt='waves'
         className='absolute h-full w-[120vw] opacity-[0.3]'
         style={{ objectFit: 'cover' }}
-      />
-      <Image
-        src={likesUp}
-        alt='likes up'
-        className='absolute bottom-0 right-[50px] h-full'
-        style={{ objectFit: 'contain' }}
       />
       <Box className='relative flex w-full flex-col gap-[56px] px-[134px] pt-[209px]'>
         <Box className='flex w-full items-center justify-between px-[100px]'>
@@ -43,6 +36,24 @@ const Hero = () => {
             left={0}
             number={1}
             title='Search Engine Optimization (SEO), experts optimize  and improve its visibility in search engine results'
+          />
+          <HeroBox
+            bottom={200}
+            left={30}
+            number={2}
+            title='Targeted Advertising,  data-driven insights and advanced targeting techniques to reach your ideal audience.'
+          />
+          <HeroBox
+            top={50}
+            right={0}
+            number={3}
+            title='Social Media Marketing  develop strategic social mediato amplify your brand'
+          />
+          <HeroBox
+            bottom={160}
+            right={30}
+            number={4}
+            title='Analytics and Reporting: We believe in data-driven decision-making.'
           />
         </Box>
       </Box>
