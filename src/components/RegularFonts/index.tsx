@@ -17,8 +17,20 @@ export const TextFontSmall = (props: TypographyProps & { smallLeading?: boolean 
   </Typography>
 );
 
+export const TextFontMedium = (props: TypographyProps) => (
+  <Typography className='text-[24px] font-[400] leading-[45px] text-white'>
+    {props.title}
+  </Typography>
+);
+
 export const TitleFontSmall = (props: TypographyProps) => (
   <Typography className='text-[20px] font-[400] leading-[36px] text-white'>
+    {props.title}
+  </Typography>
+);
+
+export const TitleFontMedium = (props: TypographyProps) => (
+  <Typography className='text-[40px] font-[400] leading-[70px] text-white'>
     {props.title}
   </Typography>
 );
