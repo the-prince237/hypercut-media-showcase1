@@ -7,7 +7,7 @@ import { HeaderLink, MenuDot } from './components';
 
 const Header = () => {
   return (
-    <Box className='flex h-[150px] w-full items-center justify-between px-[90px]'>
+    <Box className='relative z-10 flex h-[150px] w-full items-center justify-between px-[90px]'>
       <Logo />
       <Box className='flex items-center'>
         <HeaderLink title='Services' href='#services' />
