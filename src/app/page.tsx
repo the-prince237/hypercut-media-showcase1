@@ -1,7 +1,7 @@
 'use client';
 
 import { ContactUs } from '@/containers';
-import { Hero, Plans, Services, Works } from '@/containers/Home';
+import { Hero, Services, Works } from '@/containers/Home';
 import { Box } from '@mui/material';
 
 export default function Home() {
@@ -11,8 +11,7 @@ export default function Home() {
       <Box className='mt-[150vh] px-[134px]'>
         <Works />
         <Services />
-        <ContactUs />
-        <Plans />
+        <ContactUs />={' '}
       </Box>
     </Box>
   );
