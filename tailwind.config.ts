@@ -16,6 +16,7 @@ module.exports = {
       },
       dropShadow: {
         darkToBottomRight01: '30px 30px 50px #aaa',
+        serviceBox: '-30px 30px white',
       },
       scale: {
         '-1': '-1',
@@ -23,7 +24,8 @@ module.exports = {
       colors: {
         orange00: '#c76a0b',
         bgBlue: '#040724',
-        boxBlue: 'rgba(18, 21, 51, 0.60)',
+        boxBlue: 'rgba(18, 21, 51)',
+        boxBlueTrans: 'rgba(18, 21, 51, 0.60)',
         purpleLight: '#8C91BE',
       },
     },

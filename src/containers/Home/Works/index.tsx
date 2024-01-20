@@ -7,7 +7,7 @@ import { w1, w2, w3, w4, w5, w6, w7 } from '../../../../public/images/works';
 
 const Works = () => {
   return (
-    <Box className='relative flex w-full flex-col items-center gap-[80px] px-[134px]'>
+    <Box className='relative flex w-full flex-col items-center gap-[80px]'>
       <TitleFontLarge title='Exploring Our Extensive Portfolio of Successful Campaigns and Measurable Results' />
       <Masonry gutter='25px' columnsCount={4} className='items-end'>
         {itemData.map((item, index) => (
