@@ -17,6 +17,7 @@ module.exports = {
       dropShadow: {
         darkToBottomRight01: '30px 30px 50px #aaa',
         serviceBox: '-15px 15px white',
+        phoneIcon: '15px 15px 25px black',
       },
       scale: {
         '-1': '-1',
