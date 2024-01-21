@@ -17,7 +17,7 @@ const Hero = () => {
       />
       <Box className='relative flex w-full flex-col gap-[56px] px-[134px] pt-[209px]'>
         <Box className='flex w-full items-center justify-between px-[100px]'>
-          <Typography className='w-[60%] max-w-[620px] text-[48px] font-[400] leading-[70px]'>
+          <Typography className='w-[60%] max-w-[620px] text-[48px] font-bold leading-[70px]'>
             <span className='text-orange00'>From Zero to Hero</span> transform your business with
             our proven digital marketing strategies
           </Typography>

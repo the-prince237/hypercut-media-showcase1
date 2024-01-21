@@ -12,7 +12,7 @@ if (isBrowser) {
 
 const theme = createTheme({
   typography: {
-    fontFamily: ['Inter', 'sans-serif'].join(','),
+    fontFamily: ['Poppins', 'Inter', 'sans-serif'].join(','),
   },
   palette: {
     primary: {

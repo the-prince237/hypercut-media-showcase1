@@ -26,7 +26,7 @@ export const CTAShapes = () => (
         <path
           d='M0.953125 91.2891L100.397 -5.43352L187.617 -95.3745L187.617 91.2891L0.953125 91.2891Z'
           fill='white'
-          fill-opacity='0.15'
+          fillOpacity='0.15'
         />
       </svg>
     </Box>
@@ -58,7 +58,7 @@ export const CTAShapes = () => (
           r='93'
           transform='rotate(90 93.6435 93.793)'
           fill='white'
-          fill-opacity='0.1'
+          fillOpacity='0.1'
         />
       </svg>
     </Box>
@@ -76,7 +76,7 @@ export const CTAShapes = () => (
           r='92.4849'
           transform='rotate(90 92.77 93.2778)'
           fill='white'
-          fill-opacity='0.1'
+          fillOpacity='0.1'
         />
       </svg>
       <svg
@@ -89,7 +89,7 @@ export const CTAShapes = () => (
         <path
           d='M187.616 0.953613L88.172 97.6762L0.952674 187.617L0.952682 0.953605L187.616 0.953613Z'
           fill='white'
-          fill-opacity='0.15'
+          fillOpacity='0.15'
         />
       </svg>
     </Box>
