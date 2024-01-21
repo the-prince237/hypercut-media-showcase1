@@ -1,10 +1,10 @@
 import { Button } from '@mui/material';
 import React from 'react';
 
-const CTA = ({ small = false }: { small: boolean }) => {
+const CTA = ({ small = false }: { small?: boolean }) => {
   return (
     <Button
-      className='rounded-[40px] bg-orange00 text-center font-[400] text-white'
+      className='relative rounded-[40px] bg-orange00 text-center font-[400] text-white'
       style={{
         width: small ? 166 : 285,
         height: small ? 46 : 64,

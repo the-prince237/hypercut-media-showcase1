@@ -7,13 +7,15 @@ import Masonry from 'react-responsive-masonry';
 const Services = () => {
   return (
     <Box className='relative flex w-full justify-between gap-[25px]'>
-      <Box className='absolute left-[-150px] h-[80px] w-[740px] rotate-[161deg] bg-[#C76A0B] blur-[150px]' />
-      <Box className='flex max-w-[391.346px] flex-col gap-[30px]'>
+      <Box className='absolute left-[-315px] h-[80px] w-[740px] rotate-[161deg] bg-[rgba(255,255,255,0.50)] blur-[250px]' />
+      <Box className='absolute right-[-148px] top-[49px] h-[80px] w-[740px] bg-[#C76A0B] blur-[250px]' />
+      <Box className='absolute bottom-[-101px] left-[-330.85px] h-[80px] w-[740px] rotate-[-161deg] bg-[#C76A0B] blur-[250px]' />
+      <Box className='relative flex max-w-[391.346px] flex-col gap-[30px]'>
         <TitleFontMedium title='Services' />
         <TextFontSmall title='With our comprehensive suite of digital marketing features, we empower your business to thrive in the online realm, driving growth, increasing brand visibility, and engaging your target audience effectively.' />
         <TextFontMedium title='Empowering Your Business with Cutting-Edge Digital Marketing Capabilities' />
       </Box>
-      <Masonry columnsCount={2} gutter='40px'>
+      <Masonry columnsCount={2} gutter='40px' className='relative'>
         <ServicesBox
           title='Engaging Content Creation'
           number={1}

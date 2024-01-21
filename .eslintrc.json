@@ -14,7 +14,9 @@
         "drop-shadow-darkToBottomRight01",
         "flip-horizontal",
         "flip-vertical",
-        "bg-orange00"
+        "bg-orange00",
+        "bg-transWhite2",
+        "drop-shadow-phoneIcon"
       ]
     }
   }
