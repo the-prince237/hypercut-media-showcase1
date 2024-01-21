@@ -1,8 +1,8 @@
 'use client';
 
-import { CTA } from '@/components';
 import { Box, Typography } from '@mui/material';
 import React from 'react';
+import { CTABanner } from '..';
 
 const ContactUs = () => {
   return (
@@ -13,7 +13,7 @@ const ContactUs = () => {
         Don’t feel hesitate to contact us. We’d be thrilled to take a
         <span className='text-orange00'> Journey with you!</span>
       </Typography>
-      <CTA />
+      <CTABanner />
     </Box>
   );
 };

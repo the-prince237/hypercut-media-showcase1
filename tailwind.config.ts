@@ -24,9 +24,11 @@ module.exports = {
       colors: {
         orange00: '#c76a0b',
         bgBlue: '#040724',
+        bgBlueTrans: 'rgba(4, 7, 36, 0.79)',
         boxBlue: 'rgba(18, 21, 51)',
         boxBlueTrans: 'rgba(18, 21, 51, 0.60)',
         purpleLight: '#8C91BE',
+        transWhite2: 'rgba(255, 255, 255, 0.79)',
       },
     },
   },
