@@ -13,3 +13,15 @@ export const HeaderLink = (props: LinkProps & { title: string }) => (
     <MenuFont title={props.title} />
   </Link>
 );
+
+export const MenuNavigator = () => (
+  <Box className='flex items-center'>
+    <HeaderLink title='Services' href='#services' />
+    <MenuDot />
+    <HeaderLink title='About Us' href='#aboutus' />
+    <MenuDot />
+    <HeaderLink title='Features' href='#features' />
+    <MenuDot />
+    <HeaderLink title='Our Works' href='#works' />
+  </Box>
+);
