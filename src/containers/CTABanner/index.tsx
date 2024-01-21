@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { contactOptionProps } from './types';
 import { contactOptions } from './data';
-import { phoneR } from '../../../public/icons';
+import { phoneRIcon } from '../../../public/icons';
 
 const ContactBtn = ({ href, icon, name }: contactOptionProps) => (
   <Link
@@ -34,7 +34,7 @@ const CTABanner = () => {
           </Box>
           <Box className='flex w-fit items-center gap-[25px] rounded-full border-[7px] border-solid border-[#5a5f92] bg-white p-[5px]  pr-4'>
             <Box className='drop-shadow-phoneIcon rounded-full bg-orange00 p-[15px]'>
-              <Image className='h-[30px] w-[30px]' src={phoneR} alt='phone' />
+              <Image className='h-[30px] w-[30px]' src={phoneRIcon} alt='phone' />
             </Box>
             <Typography className='text-[18px] font-bold text-[#5a5f92]'>
               +237 655 061 836
