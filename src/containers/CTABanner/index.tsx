@@ -24,7 +24,8 @@ const CTABanner = () => {
         <CTAShapes />
         <Box className='flex h-full w-full flex-col gap-[25px] py-[150px]'>
           <Typography className='w-[600px] text-[34px] font-[700] leading-[46px] text-white'>
-            Réponse après <span className='font-[900] text-orange00'>2 heures ou moins</span>
+            Nous vous répondons après{' '}
+            <span className='font-[900] text-orange00'>2 heures ou moins</span>
           </Typography>
           <Box className='flex gap-[15px]'>
             {contactOptions.map((option, index) => (
