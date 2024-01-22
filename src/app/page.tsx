@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <Box
         className={classNames(
-          'minLaptop:mt-[120vh] laptopView:mt-[150vh] mt-[100vh] flex flex-col gap-[100px] overflow-x-hidden',
+          'mt-[100vh] flex flex-col gap-[100px] overflow-x-hidden minLaptop:mt-[120vh] laptopView:mt-[150vh]',
         )}
       >
         <Works />

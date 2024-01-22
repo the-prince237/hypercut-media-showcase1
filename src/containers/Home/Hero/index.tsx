@@ -24,29 +24,29 @@ const Hero = () => {
       >
         <Box className='relative flex w-full'>
           <Image src={likes} alt='likes' className='absolute left-[50%]' />
-          <Typography className='tablet:text-[42px] minLaptop:text-[48px] minLaptop:leading-[70px]  minLaptop:max-w-[60%] relative text-[36px] font-bold'>
+          <Typography className='relative text-[36px] font-bold  tablet:text-[42px] minLaptop:max-w-[60%] minLaptop:text-[48px] minLaptop:leading-[70px]'>
             Catapult your performances to the <span className='text-orange00'>Stratosphere</span>
           </Typography>
         </Box>
         <Box className='relative flex h-full flex-1 justify-center'>
           <Image src={heroVector} alt='hero' className='w-[calc(100%+32px)]' />
           <Box className='absolute flex h-full w-full flex-col gap-[15px]'>
-            <Box className='minLaptop:absolute minLaptop:left-0 minLaptop:top-[42px] flex justify-start'>
+            <Box className='flex justify-start minLaptop:absolute minLaptop:left-0 minLaptop:top-[42px]'>
               <HeroBox number={1} title='Search Engine Optimization (SEO)' />
             </Box>
-            <Box className='minLaptop:absolute minLaptop:bottom-[200px] minLaptop:left-[30px] mr-4 flex justify-end'>
+            <Box className='mr-4 flex justify-end minLaptop:absolute minLaptop:bottom-[200px] minLaptop:left-[30px]'>
               <HeroBox number={2} title='Targeted Advertising' />
             </Box>
-            <Box className='minLaptop:absolute minLaptop:right-0 minLaptop:top-[50px] ml-7 flex justify-start'>
+            <Box className='ml-7 flex justify-start minLaptop:absolute minLaptop:right-0 minLaptop:top-[50px]'>
               <HeroBox number={3} title='Social Media Marketing' />
             </Box>
-            <Box className='minLaptop:absolute minLaptop:bottom-[160px] minLaptop:right-[30px] mr-10 flex justify-end'>
+            <Box className='mr-10 flex justify-end minLaptop:absolute minLaptop:bottom-[160px] minLaptop:right-[30px]'>
               <HeroBox number={4} title='Analytics and Reporting' />
             </Box>
           </Box>
         </Box>
       </Box>
-      <Box className='minLaptop:h-[300px] absolute bottom-0 left-0 h-[200px] w-full bg-gradient-to-t from-bgBlue to-transparent' />
+      <Box className='absolute bottom-0 left-0 h-[200px] w-full bg-gradient-to-t from-bgBlue to-transparent minLaptop:h-[300px]' />
     </Box>
   );
 };
