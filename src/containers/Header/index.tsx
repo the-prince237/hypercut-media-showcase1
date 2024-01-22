@@ -7,7 +7,7 @@ import { MenuNavigator } from './components';
 
 const Header = () => {
   return (
-    <Box className='relative z-10 flex h-[150px] w-full items-center justify-between px-[90px]'>
+    <Box className='relative z-10 flex h-[150px] w-full items-center justify-between px-[45px] tablet:px-[64px] laptopView:px-[90px]'>
       <Logo />
       <MenuNavigator />
       <CTA small />

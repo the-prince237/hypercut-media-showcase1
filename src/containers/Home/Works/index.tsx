@@ -1,7 +1,7 @@
 import React from 'react';
 import { TitleFontLarge } from '@/components';
 import { Box } from '@mui/material';
-import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
+import Masonry from 'react-responsive-masonry';
 import Image from 'next/image';
 import { w1, w2, w3, w4, w5, w6, w7 } from '../../../../public/images/works';
 

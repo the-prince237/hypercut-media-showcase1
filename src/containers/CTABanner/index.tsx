@@ -23,7 +23,7 @@ const CTABanner = () => {
       <Box className='relative h-[465.162px] w-full overflow-hidden rounded-[38px] bg-boxBlue px-[64px]'>
         <CTAShapes />
         <Box className='flex h-full w-full flex-col justify-center gap-[25px] py-[50px]'>
-          <Typography className='w-[600px] text-[34px] font-[700] leading-[46px] text-white'>
+          <Typography className='w-[600px] text-[25px] font-[700] text-white tablet:text-[30px] minLaptop:text-[34px] minLaptop:font-[700] minLaptop:leading-[46px]'>
             Nous vous répondons après <br />
             <span className='font-[900] text-orange00'>2 heures ou moins</span>
           </Typography>
@@ -33,7 +33,7 @@ const CTABanner = () => {
             ))}
           </Box>
           <Box className='flex w-fit items-center gap-[25px] rounded-full border-[7px] border-solid border-[#5a5f92] bg-white p-[5px]  pr-4'>
-            <Box className='drop-shadow-phoneIcon rounded-full bg-orange00 p-[15px]'>
+            <Box className='rounded-full bg-orange00 p-[15px] drop-shadow-phoneIcon'>
               <Image className='h-[30px] w-[30px]' src={phoneRIcon} alt='phone' />
             </Box>
             <Typography className='text-[18px] font-bold text-[#5a5f92]'>
