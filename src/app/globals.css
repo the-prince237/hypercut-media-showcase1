@@ -8,6 +8,12 @@
   --color-gray_blue: rgba(27, 30, 50, 0.082);
   --color-gray: rgb(195, 195, 207);
   --color-golf: #daa520;
+  --gradient-text: linear-gradient(
+    60deg,
+    rgb(94, 94, 152) 10%,
+    #c37425 65%,
+    rgb(200, 222, 252) 90%
+  );
 }
 
 body {
@@ -32,4 +38,28 @@ body {
 /* Flip on the Y axis */
 .flip-vertical {
   --transform-scale-y: -1;
+}
+
+.gradient__text {
+  background: linear-gradient(60deg, #e21143, #ffb03a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animateGradient 2s ease-in-out 0 infinite normal both;
+}
+
+@keyframes animateGradient {
+  from {
+    background: linear-gradient(60deg, #e21143, #ffb03a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  to {
+    background: none;
+    background-clip: none;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: white;
+    color: white;
+  }
 }

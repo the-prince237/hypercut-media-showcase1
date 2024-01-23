@@ -29,6 +29,7 @@ module.exports = {
         boxBlue: 'rgba(18, 21, 51)',
         boxBlueTrans: 'rgba(18, 21, 51, 0.60)',
         purpleLight: '#8C91BE',
+        transWhite: 'rgba(255, 255, 255, 0.2)',
         transWhite2: 'rgba(255, 255, 255, 0.79)',
       },
       screens: {

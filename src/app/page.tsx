@@ -9,11 +9,11 @@ import './globals.css';
 
 export default function Home() {
   return (
-    <Box className='flex flex-col overflow-x-hidden'>
+    <Box className='flex flex-col gap-[150px] overflow-x-hidden'>
       <Header />
       <Hero />
       <Works />
-      <Box className={classNames('w-full', styles.pagePadder)}>
+      <Box className={classNames('flex w-full flex-col gap-[150px]', styles.pagePadder)}>
         <Services />
         <ContactUs />
       </Box>

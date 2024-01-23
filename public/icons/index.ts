@@ -4,3 +4,4 @@ export { default as messengerIcon } from './messenger.svg';
 export { default as whatsappIcon } from './whatsapp.svg';
 export { default as gmailIcon } from './gmail.svg';
 export { default as phoneRIcon } from './phone-r.svg';
+export { default as scrollDownIcon } from './scroll-down.svg';
