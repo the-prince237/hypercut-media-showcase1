@@ -12,13 +12,11 @@ const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   // header bg state
   const [bg, setBg] = useState(false);
-  //nav mobile state
-  const [navMobile, setNavMobile] = useState(false);
 
   //scroll event
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      window.scrollY > 800 ? setBg(true) : setBg(false);
+      window.scrollY > 300 ? setBg(true) : setBg(false);
     });
   });
 
@@ -35,7 +33,7 @@ const Header = () => {
       </Box>
       {menuOpened && (
         <Box className='animate-wobble fixed left-0 top-0 flex h-screen w-screen items-center justify-center bg-boxBlue largeTablet:hidden'>
-          <MenuNavigator col />
+          <MenuNavigator close={() => setMenuOpened(false)} col />
         </Box>
       )}
       <Image

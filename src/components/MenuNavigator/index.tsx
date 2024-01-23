@@ -15,14 +15,22 @@ export const MenuLink = (props: LinkProps & { title: string; footer?: boolean })
   </Link>
 );
 
-export const MenuNavigator = ({ footer, col }: { footer?: boolean; col?: boolean }) => (
+export const MenuNavigator = ({
+  footer,
+  col,
+  close,
+}: {
+  footer?: boolean;
+  col?: boolean;
+  close?: any;
+}) => (
   <Box className={classNames('flex items-center gap-[15px]', { 'flex-col': col })}>
-    <MenuLink footer={footer} title='Services' href='#services' />
+    <MenuLink onClick={close} footer={footer} title='Services' href='#services' />
     <MenuDot />
-    <MenuLink footer={footer} title='About Us' href='#aboutus' />
+    <MenuLink onClick={close} footer={footer} title='About Us' href='#aboutus' />
     <MenuDot />
-    <MenuLink footer={footer} title='Features' href='#features' />
+    <MenuLink onClick={close} footer={footer} title='Features' href='#features' />
     <MenuDot />
-    <MenuLink footer={footer} title='Our Works' href='#works' />
+    <MenuLink onClick={close} footer={footer} title='Our Works' href='#works' />
   </Box>
 );
