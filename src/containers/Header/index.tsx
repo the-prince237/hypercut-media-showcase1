@@ -12,35 +12,33 @@ const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   // header bg state
   const [bg, setBg] = useState(false);
-  //nav mobile state
-  const [navMobile, setNavMobile] = useState(false);
 
   //scroll event
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      window.scrollY > 800 ? setBg(true) : setBg(false);
+      window.scrollY > 300 ? setBg(true) : setBg(false);
     });
   });
 
   return (
     <Box
       className={classNames(
-        'z-10 flex h-[80px] w-full items-center justify-between px-[45px] tablet:h-[100px] tablet:px-[64px] largeTablet:relative minLaptop:h-[150px] laptopView:px-[90px]',
-        { 'fixed bg-boxBlueTrans backdrop-blur-lg largeTablet:relative': bg },
+        'largeTablet:relative z-10 flex h-[80px] w-full items-center justify-between px-[45px] tablet:h-[100px] tablet:px-[64px] minLaptop:h-[150px] laptopView:px-[90px]',
+        { 'largeTablet:relative fixed bg-boxBlueTrans backdrop-blur-lg': bg },
       )}
     >
       <Logo />
-      <Box className='hidden largeTablet:block'>
+      <Box className='largeTablet:block hidden'>
         <MenuNavigator />
       </Box>
       {menuOpened && (
-        <Box className='animate-wobble fixed left-0 top-0 flex h-screen w-screen items-center justify-center bg-boxBlue largeTablet:hidden'>
-          <MenuNavigator col />
+        <Box className='animate-wobble largeTablet:hidden fixed left-0 top-0 flex h-screen w-screen items-center justify-center bg-boxBlue'>
+          <MenuNavigator close={() => setMenuOpened(false)} col />
         </Box>
       )}
       <Image
         src={menuIcon}
-        className={classNames('relative largeTablet:hidden', {
+        className={classNames('largeTablet:hidden relative', {
           'rotate-0': menuOpened,
           'rotate-[-180deg]': !menuOpened,
         })}
