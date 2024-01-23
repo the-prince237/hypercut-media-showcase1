@@ -41,7 +41,7 @@ import hypercut from '../../public/hypercut.png';
 const Logo = () => {
   return (
     <Box className='relative flex justify-center'>
-      <Image src={hypercut} width={45} alt='hypercut media' />
+      <Image src={hypercut} className='w-[30px] tablet:w-[45px]' alt='hypercut media' />
     </Box>
   );
 };
