@@ -35,6 +35,7 @@ module.exports = {
       screens: {
         laptopView: '1500px',
         minLaptop: '1024px',
+        largeTablet: '905px',
         tablet: '768px',
         smallTablet: '620px',
         mobile: '425px',

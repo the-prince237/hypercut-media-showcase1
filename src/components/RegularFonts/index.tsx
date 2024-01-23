@@ -2,10 +2,7 @@ import { Typography, TypographyProps } from '@mui/material';
 import classNames from 'classnames';
 
 export const MenuFont = (props: TypographyProps) => (
-  <Typography
-    className='text-[12px] font-[500] text-white tablet:text-[14px] minLaptop:text-[16px]'
-    {...props}
-  >
+  <Typography className='text-[14px] font-[800] text-white tablet:text-[16px]' {...props}>
     {props.title}
   </Typography>
 );

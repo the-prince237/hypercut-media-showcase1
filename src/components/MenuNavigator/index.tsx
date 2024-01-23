@@ -1,5 +1,6 @@
 import { MenuFont, TextFontSmall } from '@/components';
 import { Box } from '@mui/system';
+import classNames from 'classnames';
 import Link, { LinkProps } from 'next/link';
 
 export const MenuDot = () => (
@@ -14,8 +15,8 @@ export const MenuLink = (props: LinkProps & { title: string; footer?: boolean })
   </Link>
 );
 
-export const MenuNavigator = ({ footer }: { footer?: boolean }) => (
-  <Box className='flex items-center'>
+export const MenuNavigator = ({ footer, col }: { footer?: boolean; col?: boolean }) => (
+  <Box className={classNames('flex items-center gap-[15px]', { 'flex-col': col })}>
     <MenuLink footer={footer} title='Services' href='#services' />
     <MenuDot />
     <MenuLink footer={footer} title='About Us' href='#aboutus' />
