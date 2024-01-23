@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 
 export const CTAShapes = () => (
-  <Box className='tablet:opacity-[0.3] minLaptop:opacity-100 absolute right-0 flex flex-col items-end opacity-[0.1]'>
+  <Box className='absolute right-0 flex flex-col items-end opacity-[0.1] tablet:opacity-[0.3] minLaptop:opacity-100'>
     <Box className='flex items-end justify-end'>
       <svg
         xmlns='http://www.w3.org/2000/svg'

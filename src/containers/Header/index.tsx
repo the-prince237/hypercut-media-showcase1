@@ -25,22 +25,22 @@ const Header = () => {
   return (
     <Box
       className={classNames(
-        'largeTablet:relative z-10 flex h-[80px] w-full items-center justify-between px-[45px] tablet:h-[100px] tablet:px-[64px] minLaptop:h-[150px] laptopView:px-[90px]',
-        { 'largeTablet:relative fixed bg-boxBlueTrans backdrop-blur-lg': bg },
+        'z-10 flex h-[80px] w-full items-center justify-between px-[45px] tablet:h-[100px] tablet:px-[64px] largeTablet:relative minLaptop:h-[150px] laptopView:px-[90px]',
+        { 'fixed bg-boxBlueTrans backdrop-blur-lg largeTablet:relative': bg },
       )}
     >
       <Logo />
-      <Box className='largeTablet:block hidden'>
+      <Box className='hidden largeTablet:block'>
         <MenuNavigator />
       </Box>
       {menuOpened && (
-        <Box className='largeTablet:hidden animate-wobble fixed left-0 top-0 flex h-screen w-screen items-center justify-center bg-boxBlue'>
+        <Box className='animate-wobble fixed left-0 top-0 flex h-screen w-screen items-center justify-center bg-boxBlue largeTablet:hidden'>
           <MenuNavigator col />
         </Box>
       )}
       <Image
         src={menuIcon}
-        className={classNames('largeTablet:hidden relative', {
+        className={classNames('relative largeTablet:hidden', {
           'rotate-0': menuOpened,
           'rotate-[-180deg]': !menuOpened,
         })}

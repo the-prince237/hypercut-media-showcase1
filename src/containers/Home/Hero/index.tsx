@@ -85,7 +85,7 @@ const Hero = () => {
       <Image
         src={scrollDownIcon}
         alt='scroll down'
-        className='bg-transWhite absolute bottom-[100px] m-auto w-[50px] animate-bounce rounded-full backdrop-blur-xl minLaptop:hidden'
+        className='absolute bottom-[100px] m-auto w-[50px] animate-bounce rounded-full bg-transWhite backdrop-blur-xl minLaptop:hidden'
       />
     </Box>
   );
