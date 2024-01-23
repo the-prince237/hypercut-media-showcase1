@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 
 const styles = {
-  pagePadder: classNames('px-[45px] tablet:px-[64px] minLaptop:px-[86px] laptopView:px-[134px]'),
+  pagePadder: classNames('px-[35px] tablet:px-[52px] minLaptop:px-[70px] laptopView:px-[104px]'),
 };
 
 export default styles;

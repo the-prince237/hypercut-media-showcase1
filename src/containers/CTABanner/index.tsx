@@ -19,24 +19,28 @@ const ContactBtn = ({ href, icon, name }: contactOptionProps) => (
 
 const CTABanner = () => {
   return (
-    <Box className='w-full rounded-[40px] bg-gradient-to-tl from-transparent to-[#5a5f92] p-[7px] drop-shadow-2xl'>
-      <Box className='relative h-[465.162px] w-full overflow-hidden rounded-[38px] bg-boxBlue px-[64px]'>
+    <Box className='minLaptop:p-[7px] w-full rounded-[40px] bg-gradient-to-tl from-transparent to-[#5a5f92] p-[4px] drop-shadow-2xl'>
+      <Box className='minLaptop:px-[35px] laptopView:px-[64px] relative w-full overflow-hidden rounded-[38px] bg-boxBlue px-[25px]'>
         <CTAShapes />
-        <Box className='flex h-full w-full flex-col justify-center gap-[25px] py-[50px]'>
-          <Typography className='w-[600px] text-[25px] font-[700] text-white tablet:text-[30px] minLaptop:text-[34px] minLaptop:font-[700] minLaptop:leading-[46px]'>
+        <Box className='minLaptop:gap-[25px] minLaptop:py-[35px] laptopView:py-[50px] flex h-full w-full flex-col justify-center gap-[15px] py-[25px]'>
+          <Typography className='tablet:text-[30px] minLaptop:text-[34px] minLaptop:font-[700] minLaptop:leading-[46px] w-[600px] max-w-full text-wrap text-[25px] font-[700] text-white'>
             Nous vous répondons après <br />
             <span className='font-[900] text-orange00'>2 heures ou moins</span>
           </Typography>
-          <Box className='flex gap-[15px]'>
+          <Box className='flex flex-wrap gap-[15px]'>
             {contactOptions.map((option, index) => (
               <ContactBtn key={index} {...option} />
             ))}
           </Box>
-          <Box className='flex w-fit items-center gap-[25px] rounded-full border-[7px] border-solid border-[#5a5f92] bg-white p-[5px]  pr-4'>
+          <Box className='minLaptop:pr-4 minLaptop:gap-[25px] flex w-fit items-center gap-[10px] rounded-full border-[7px] border-solid border-[#5a5f92] bg-white p-[5px] pr-2'>
             <Box className='rounded-full bg-orange00 p-[15px] drop-shadow-phoneIcon'>
-              <Image className='h-[30px] w-[30px]' src={phoneRIcon} alt='phone' />
+              <Image
+                className='minLaptop:h-[30px] minLaptop:w-[30px] h-[20px] w-[20px]'
+                src={phoneRIcon}
+                alt='phone'
+              />
             </Box>
-            <Typography className='text-[18px] font-bold text-[#5a5f92]'>
+            <Typography className='tablet:text-[16px] minLaptop:text-[18px] text-[14px] font-bold text-[#5a5f92]'>
               +237 655 061 836
             </Typography>
           </Box>

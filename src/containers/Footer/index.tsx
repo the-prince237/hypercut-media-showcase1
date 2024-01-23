@@ -11,13 +11,15 @@ const Footer = () => {
   return (
     <Box
       className={classNames(
-        'flex w-full items-center justify-center gap-[100px] overflow-x-hidden py-[64px]',
+        'minLaptop:gap-[75px] laptopView:pgap-[100px] minlapTop:justify-center flex w-full items-center justify-between gap-[25px] py-[64px]',
         styles.pagePadder,
       )}
     >
       <TextFontSmall title='@ Copyright wellrafi.com All Right Reserved.' />
       <Logo />
-      <MenuNavigator />
+      <Box className='minLaptop:block hidden'>
+        <MenuNavigator />
+      </Box>
     </Box>
   );
 };

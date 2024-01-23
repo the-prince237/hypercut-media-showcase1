@@ -7,14 +7,13 @@ import { itemData } from './data';
 
 const Works = () => {
   return (
-    <Box className='relative left-0 flex w-full flex-col items-center gap-[80px]'>
+    <Box className='relative left-0 mt-[100vh] flex w-full flex-col items-center gap-[80px] minLaptop:mt-[120vh] laptopView:mt-[150vh]'>
       <Box className='max-w-[70%]'>
         <TitleFontLarge title='Exploring Our Extensive Portfolio of Successful Campaigns and Measurable Results' />
       </Box>
       <Box className='absolute right-[-150px] top-[500px] h-[710.399px] w-[1001.792px] rotate-[-33.6deg] rounded-[249.471px] bg-[rgba(199,106,11,0.20)]  blur-[250px]' />
 
       <Box className='absolute left-[-100px] top-[1980px] h-[80px] w-[944px] rotate-[-130.218deg] bg-blue-500 blur-[250px]' />
-      <Box className='absolute right-[40%] top-[2080px] h-[300px] w-[944px] rotate-[-130.218deg] bg-yellow-500 blur-[250px]' />
       <ResponsiveMasonry
         columnsCountBreakPoints={{
           1024: 4,

@@ -18,19 +18,23 @@ const Hero = () => {
       />
       <Box
         className={classNames(
-          'relative flex min-h-screen w-full flex-col justify-between gap-[56px] pt-[209px]',
-          styles.pagePadder,
+          'relative flex h-full min-h-screen w-screen flex-col justify-between gap-[56px] pt-[209px]',
         )}
       >
-        <Box className='relative flex w-full'>
-          <Image src={likes} alt='likes' className='absolute left-[50%]' />
+        <Box className={classNames('relative flex w-full', styles.pagePadder)}>
+          <Image src={likes} alt='likes' className='absolute left-[50%] w-[200vw]' />
           <Typography className='relative text-[36px] font-bold  tablet:text-[42px] minLaptop:max-w-[60%] minLaptop:text-[48px] minLaptop:leading-[70px]'>
             Catapult your performances to the <span className='text-orange00'>Stratosphere</span>
           </Typography>
         </Box>
-        <Box className='relative flex h-full flex-1 justify-center'>
+        <Box className='relative flex h-full w-full flex-1 items-end justify-center'>
           <Image src={heroVector} alt='hero' className='w-[calc(100%+32px)]' />
-          <Box className='absolute flex h-full w-full flex-col gap-[15px]'>
+          <Box
+            className={classNames(
+              'absolute flex h-full w-full flex-col gap-[15px]',
+              styles.pagePadder,
+            )}
+          >
             <Box className='flex justify-start minLaptop:absolute minLaptop:left-0 minLaptop:top-[42px]'>
               <HeroBox number={1} title='Search Engine Optimization (SEO)' />
             </Box>
