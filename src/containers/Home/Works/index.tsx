@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { TextFontMedium, TitleFontLarge } from '@/components';
 import { Box, Button } from '@mui/material';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
