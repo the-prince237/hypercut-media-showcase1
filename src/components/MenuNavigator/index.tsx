@@ -25,12 +25,12 @@ export const MenuNavigator = ({
   close?: any;
 }) => (
   <Box className={classNames('flex items-center gap-[15px]', { 'flex-col': col })}>
-    <MenuLink onClick={close} footer={footer} title='Services' href='#services' />
-    <MenuDot />
-    <MenuLink onClick={close} footer={footer} title='About Us' href='#aboutus' />
-    <MenuDot />
     <MenuLink onClick={close} footer={footer} title='Features' href='#features' />
     <MenuDot />
+    <MenuLink onClick={close} footer={footer} title='Services' href='#services' />
+    <MenuDot />
     <MenuLink onClick={close} footer={footer} title='Our Works' href='#works' />
+    <MenuDot />
+    <MenuLink onClick={close} footer={footer} title='Contact Us' href='#contact' />
   </Box>
 );

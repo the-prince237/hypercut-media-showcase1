@@ -43,7 +43,7 @@ const CTABanner = () => {
               />
             </Box>
             <Typography className='text-[14px] font-bold text-[#5a5f92] tablet:text-[16px] minLaptop:text-[18px]'>
-              +237 655 061 836
+              +237 673 080 527
             </Typography>
           </Box>
         </Box>

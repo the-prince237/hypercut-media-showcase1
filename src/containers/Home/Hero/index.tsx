@@ -11,7 +11,10 @@ import { scrollDownIcon } from '../../../../public/icons';
 
 const Hero = () => {
   return (
-    <Box className='absolute top-0 flex h-fit min-h-screen w-screen flex-col items-center overflow-x-hidden'>
+    <Box
+      id='features'
+      className='absolute top-0 flex h-fit min-h-screen w-screen flex-col items-center overflow-x-hidden'
+    >
       <Image
         src={waves}
         alt='waves'
@@ -66,16 +69,16 @@ const Hero = () => {
             )}
           >
             <Box className='flex justify-start minLaptop:absolute minLaptop:left-0 minLaptop:top-[42px]'>
-              <HeroBox number={1} title='Search Engine Optimization (SEO)' />
+              <HeroBox number={1} title='Branding & Positionnement' />
             </Box>
             <Box className='mr-4 flex justify-end minLaptop:absolute minLaptop:bottom-[200px] minLaptop:left-[30px]'>
-              <HeroBox number={2} title='Targeted Advertising' />
+              <HeroBox number={2} title="Marketing d'influence" />
             </Box>
             <Box className='ml-7 flex justify-start minLaptop:absolute minLaptop:right-0 minLaptop:top-[50px]'>
-              <HeroBox number={3} title='Social Media Marketing' />
+              <HeroBox number={3} title='Community Management' />
             </Box>
             <Box className='mr-[-15px] flex justify-end minLaptop:absolute minLaptop:bottom-[160px] minLaptop:right-[30px]'>
-              <HeroBox number={4} title='Analytics and Reporting' />
+              <HeroBox number={4} title='Meta & Tiktok Analytics' />
             </Box>
           </Box>
         </Box>

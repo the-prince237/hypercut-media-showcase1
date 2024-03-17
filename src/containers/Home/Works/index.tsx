@@ -39,7 +39,10 @@ const Works = () => {
   const [show, setShow] = useState(false);
 
   return (
-    <Box className='relative left-0 mt-[100vh] flex w-full flex-col items-center gap-[80px] minLaptop:mt-[120vh] laptopView:mt-[150vh]'>
+    <Box
+      id='works'
+      className='relative left-0 mt-[100vh] flex w-full flex-col items-center gap-[80px] minLaptop:mt-[120vh] laptopView:mt-[150vh]'
+    >
       <Box className={classNames('smallTablet:max-w-[70%]', styles.pagePadder)}>
         <TitleFontLarge title='Explore Our Portfolio of Successful Campaigns' />
       </Box>
