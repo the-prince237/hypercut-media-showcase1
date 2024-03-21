@@ -4,6 +4,7 @@ import { createEmotionCache, theme } from '@/theme';
 import { CacheProvider } from '@emotion/react';
 import { ScopedCssBaseline } from '@mui/material';
 import { StyledEngineProvider, ThemeProvider } from '@mui/material/styles';
+import { GoogleTagManager } from '@next/third-parties/google';
 import React from 'react';
 import { initThinBackend } from 'thin-backend';
 import { ThinBackend } from 'thin-backend-react';
@@ -18,6 +19,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
       <CacheProvider value={clientSideEmotionCache}>
         <StyledEngineProvider injectFirst>
           <ThemeProvider theme={theme}>
+            <GoogleTagManager gtmId='G-YQJR10W67D' />
             <ScopedCssBaseline />
             {children}
           </ThemeProvider>
