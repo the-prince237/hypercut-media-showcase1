@@ -1,6 +1,7 @@
 import { MenuFont, TextFontSmall } from '@/components';
 import { Box } from '@mui/system';
 import classNames from 'classnames';
+import { omit } from 'lodash';
 import Link, { LinkProps } from 'next/link';
 
 export const MenuDot = () => (
@@ -10,7 +11,7 @@ export const MenuDot = () => (
 );
 
 export const MenuLink = (props: LinkProps & { title: string; footer?: boolean }) => (
-  <Link {...props}>
+  <Link {...omit(props, ['footer', 'title'])}>
     {props.footer ? <TextFontSmall title={props.title} /> : <MenuFont title={props.title} />}
   </Link>
 );
