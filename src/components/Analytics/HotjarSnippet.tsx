@@ -3,8 +3,6 @@
 import Script from 'next/script';
 
 const HotjarSnippet = () => {
-  if (!process.env.NEXT_PUBLIC_HOTJAR_ID) return null;
-
   return (
     <Script
       id='hotjar-snippet'

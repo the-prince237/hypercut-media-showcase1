@@ -28,6 +28,7 @@
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-hotjar": "^6.3.1",
     "react-responsive-masonry": "^2.1.7",
     "react-type-animation": "^3.2.0",
     "thin-backend": "^0.12.1",
