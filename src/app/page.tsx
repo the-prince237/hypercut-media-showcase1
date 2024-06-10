@@ -6,8 +6,14 @@ import styles from '@/styles';
 import { Box } from '@mui/material';
 import classNames from 'classnames';
 import './globals.css';
+import { useEffect } from 'react';
+import { hotjar } from 'react-hotjar';
 
 export default function Home() {
+  useEffect(() => {
+    hotjar.initialize({ id: 5017930, sv: 6 });
+  }, []);
+
   return (
     <Box className='flex flex-col gap-[150px] overflow-x-hidden'>
       <Header />
