@@ -12,6 +12,7 @@ import { hotjar } from 'react-hotjar';
 export default function Home() {
   useEffect(() => {
     hotjar.initialize({ id: 5017930, sv: 6 });
+    console.log({ hotjarInitilized: hotjar.initialized() });
   }, []);
 
   return (
